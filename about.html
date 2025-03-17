@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   <!-- Navigation einbinden -->
+ <div id="navbar"></div>
+
+ <header class="carousel">
+     <div class="carousel">
+         <div class="carousel-container">
+             <div class="carousel-slide">
+                 <img src="assets/00-44.jpg" alt="Bild 1">
+             </div>
+             <div class="carousel-slide">
+                 <img src="assets/00-28.jpg" alt="Bild 2">
+             </div>
+             <div class="carousel-slide">
+                 <img src="assets/00-35.jpg" alt="Bild 3">
+             </div>
+             <div class="carousel-slide">
+                 <img src="assets/00-31.jpg" alt="Bild 3">
+             </div>
+         </div>
+     
+         <!-- Navigation Buttons -->
+         <button class="carousel-btn prev">&#10094;</button>
+         <button class="carousel-btn next">&#10095;</button>
+     
+         <!-- Indikator-Punkte -->
+         <div class="carousel-indicators">
+             <span class="dot active" data-index="0"></span>
+             <span class="dot" data-index="1"></span>
+             <span class="dot" data-index="2"></span>
+         </div>
+     </div>
+ </header>
+
+
+    <main  class="main-container ">
+
+        <section class=" media-text-layout">
+            <div class=""><h1>I like your Smile</h1></div>
+            <div class="image-text-container-box">
+                <div class="media-text-column-left">
+                    <img src="../assets/00-38.jpg" alt="Photographer">
+                </div>
+                <div class="media-text-column-right">
+                    <h2>Alaa Taliaa</h2>
+                    <p><b>Ausgebildeter Mediengestalter und leidenschaftlicher Fotograf</b></p>
+                    <p>Ich habe eine große Affinität zur Fotografie und eine besondere Vorliebe für Porträts, die einen bleibenden Eindruck hinterlassen.</p>
+                    <p>Als erfahrener Videofilmemacher bringe ich Kenntnisse in Videografie und Video- bearbeitung mit, was mich zu einem vielseitigen Medienexperten macht.</p>
+                </div>
+            </div>
+            <div class=" full-width-box">
+                <p>Ich gehe jedes Projekt mit Begeisterung und Freude an der Zusammenarbeit an, da ich meine Arbeit mit großer Liebe mache. Außerdem bin ich eine freundliche und kooperative Person, die Kreativität schätzt und Spaß daran hat, schönes visuelles Material zu schaffen.</p>
+            </div>
+        </section>
+
+        <section class="media-text-layout">
+            <div class=" full-width-box">
+                <p><b>Mir ist es wichtig, dass deine Fotos deine Persönlichkeit widerspiegeln.</b></p>
+                <p>Nach dem Shooting präsentiere ich dir eine liebevoll zusammengestellte Auswahl der besten Aufnahmen. Du hast die volle Kontrolle und entscheidest, welche Bilder deine einzigartige Geschichte erzählen sollen.</p>
+            
+            </div>
+        </section>
+
+<!-- text-carousel -->
+<div class="text-carousel">
+    <div class="icons-box ">
+        <img class="icon" id="customers-say" src="assets/peoplesay.svg" alt=" That's what my customers say.">
+        <h2>Das sagen meine Kunden</h2>
+    </div>
+    
+    <!-- Radio Buttons für Navigation -->
+    <input type="radio" name="text-slider" id="text-slider1" checked>
+    <input type="radio" name="text-slider" id="text-slider2">
+    <input type="radio" name="text-slider" id="text-slider3">
+    <input type="radio" name="text-slider" id="text-slider4">
+
+    <!-- Texte -->
+    <div class="text-carousel-track">
+        <div class="text-carousel-div">
+
+            <h3>Linda Gutzeit:</h3>
+            <p><span class="anführungszeichen">&bdquo;</span>Family Shooting mit Alaa Taliaa<br> 
+            <p>Wir wurden freundlich und herzlich begrüßt.</p> 
+            <p>Unser Fotograf hatte es mit unserer neun Monate alten Tochter gar nicht so 
+            Er hat sich echt ins Zeug gelegt, um die Kleine zu
+                fotografieren.  </p>
+        </div>
+        <div class="text-carousel-div">
+            <p>Die „Foto“-Zeit war schnell vorbei und wir haben verschiedene Hintergründe und Posen gemacht.</p>
+            <p>Er war immer darauf
+                bedacht, dass unsere Tochter auch Spaß hat. Am Ende haben wir uns für ein großes Fotopaket entschieden, weil
+                wir uns zwischen den vielen Fotos nicht entscheiden konnten. </p>
+                <p>Wir sind sehr zufrieden und happy über die tollen
+                    Fotos. Tolle Arbeit! <span class="anführungszeichen">&rdquo;</span></p>
+        </div>
+        <div class="text-carousel-div">
+            <h3>Raffa Ndeti:</h3>
+            <p><span class="anführungszeichen">&bdquo;</span>Alaa Taliaa ist wirklich ein hervorragender Fotograf. Er schafft es, in lockerer Atmosphäre super schöne Fotos zu
+                kreieren – und das, obwohl ich der Fotografie so gar nichts abgewinnen konnte! Die Fotos sind echt super
+                geworden! Vielen Dank!<span class="anführungszeichen">&rdquo;</span></p>
+        </div>
+
+        <div class="text-carousel-div">
+            <h3>Gila Fischer:</h3>
+            <p><span class="anführungszeichen">&bdquo;</span>Liebevolle Betreuung, gute Ideen, lustige natürliche Fotos – so wie ich es wollte.</p>
+            <p>Ach ja, der Fotograf war Herr
+                Alaa Taliaa.<span class="anführungszeichen">&rdquo;</span></p>
+        </div>
+
+
+    </div>
+
+    <!-- Navigationspfeile -->
+    <button class="text-carousel-button left" onclick="window.textCarousel.prevSlide()">&#10094;</button>
+    <button class="text-carousel-button right" onclick="window.textCarousel.nextSlide()">&#10095;</button>
+
+</div>
+
+
+    <!------------ form-section -->
+    <section class="contact-form-section ">
+        <h2>Drop Us a Line</h2>
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone No. *</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">I would like to discuss *</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <button type="submit"><span>Senden</span></button>
+            <p class="form-terms">.</p>
+        </form>
+    </section>
+        
+    </main>
+
+    <!-- Footer einbinden -->
+    <div id="footer"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

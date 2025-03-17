@@ -1,0 +1,150 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+
+p {
+    margin: 0.5em 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+#navbar {
+    background-color: #222;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #444;
+}
+
+/* Main Container */
+.main-container {
+    padding: 20px;
+}
+
+/* Media-Text-Layout */
+.media-text-layout {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.image-text-container-box {
+    display: flex;
+}
+
+.media-text-column-left img {
+    max-width: 100%;
+}
+
+.media-text-column-right {
+    padding-left: 20px;
+}
+
+/* Full Width Box */
+.full-width-box {
+    margin-top: 20px;
+}
+
+/* Text Carousel */
+.text-carousel {
+    position: relative;
+}
+
+.text-carousel-track {
+    display: flex;
+}
+
+.text-carousel-div {
+    min-width: 100%;
+}
+
+.text-carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Contact Form Section */
+.contact-form-section h2 {
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-group {
+    flex-basis: calc(50% - 10px);
+}
+

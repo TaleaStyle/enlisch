@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation einbinden -->
+    <div id="navbar"></div>
+
+    <header class="carousel">
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="assets/00-44.jpg" alt="Bild 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/00-28.jpg" alt="Bild 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/00-35.jpg" alt="Bild 3">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/00-31.jpg" alt="Bild 3">
+                </div>
+            </div>
+        
+            <!-- Navigation Buttons -->
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+        
+            <!-- Indikator-Punkte -->
+            <div class="carousel-indicators">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </header>
+
+    <main  class="main-container ">
+
+        <section class="media-text-layout">
+            <img src="../assets/00-42.jpg" alt="">
+        
+            <!-- Hauptcontainer für das Layout, das Medien und Text kombiniert -->
+            <div class="full-width-box">
+                <div class="icons-box ">
+                    <img class="icon" src="assets/hinweiss.svg" alt="calendar icon">
+                    <h2>Hinweise zur Buchung:</h2>
+                </div>
+
+                <p>- Termine können maximal <b>2 Monate</b> im Voraus gebucht werden.</p>
+                <p>- Je nach gewünschtem Termin fällt eine Reservierungspauschale an. Die genaue Höhe wird dir nach Auswahl des Datums direkt beim entsprechenden Zeitslot angezeigt.</p>
+                <p>- Diese Pauschale ist nicht erstattungsfähig und wird nicht auf den Shooting-Preis angerechnet.</p>
+                <p>- <span class="fully-booked"></span> <b>Tage</b>, die grau markiert sind, sind bereits vollständig ausgebucht und nicht mehr verfügbar.</p>
+            </div>
+        
+            <!-- Container für die beiden Spalten: rechte Spalte und linke Spalte -->
+            <div class="image-text-container-box">
+                <!-- Rechte Spalte: Kalender -->
+                <div class="media-text-column-right">
+                    <div class="calendar" id="calendar-body">
+                        <div class="calendar-header">
+                            <button id="prev-month" aria-label="Vorheriger Monat">‹</button>
+                            <div id="month-year"></div>
+                            <button id="next-month" aria-label="Nächster Monat">›</button>
+                        </div>
+        
+                        <div class="calendar-body">
+                            <div class="calendar-weekdays">
+                                <div>So</div>
+                                <div>Mo</div>
+                                <div>Di</div>
+                                <div>Mi</div>
+                                <div>Do</div>
+                                <div>Fr</div>
+                                <div>Sa</div>
+                            </div>
+                            <div class="calendar-dates">
+                                <!-- Hier werden die Tage dynamisch befüllt -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Linke Spalte -->
+                <div class="media-text-column-left">
+                    <div class="full-width-box">
+                        <div class="alert-fullyBooked" role="alert" style="display: none;"></div>
+                        <div class="freienTermine" role="alert" style="display: block;">
+                            <!-- Hier werden verfügbare Termine eingefügt -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+  
+      <!------------  form-section -->
+      <section class="contact-form-section">
+        <div class="icons-box ">
+            <img class="icon" src="assets/kalender.svg" alt="calendar icon">
+            <h2>Termin buchen</h2>
+        </div>
+        
+        <form novalidate class="contact-form" id="booking-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="shootingArt">Shooting-Art auswählen:</label>
+                    <select id="shootingArt" required>
+                        <option value="">-- Bitte wählen --</option>
+                        <option value="Beauty">Beauty</option>
+                        <option value="Business">Business</option>
+                        <option value="Erotic">Erotic</option>
+                        <option value="Family">Family</option>
+                        <option value="Friends">Friends</option>
+                        <option value="Lovestory">Lovestory</option>
+                        <option value="Outdoor">Outdoor</option>
+                        <option value="Pregnant">Pregnant</option>
+                    </select>                </div>
+            </div>
+            <div class="form-row">
+
+        
+                <div class="form-group">
+                    <label for="vorname">Vorname *</label>
+                    <input type="text" id="vorname" name="vorname" required>
+                </div>
+                <div class="form-group">
+                    <label for="nachname">Nachname *</label>
+            <input type="text" id="nachname" name="nachname" required>
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">E-Mail *</label>
+            <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefonnummer">Telefonnummer *</label>
+            <input type="tel" id="telefonnummer" name="telefonnummer" required pattern="[0-9+\-() ]{10,}">
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Ihre Nachricht:</label>
+        <textarea id="message" name="message" rows="5"  placeholder="Schreiben Sie hier Ihre Nachricht..."></textarea>
+       
+            </div>
+     <!-- Platzhalter für Fehlermeldungen & Erfolgsmeldungen -->
+     <div class="alert-danger" role="alert" style="display: none;"></div>
+     <div class="alert-success" role="alert" style="display: none;"></div>
+            <button type="submit" id="submitButton"><span>Termin buchen</span></button>
+            <p class="form-terms">.</p>
+        </form>
+    </section>
+        
+    </main>
+
+    <!-- Footer einbinden -->
+    <div id="footer"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
