@@ -1236,7 +1236,7 @@ footer {
     }
 
     .text-carousel-div {
-        margin-top : 15px;
+   
         font-size: 1.1rem; /* Kleinere Schriftgröße für mobile Geräte */
         padding: 30px; /* Weniger Padding auf kleinen Bildschirmen */
         line-height: 1.3; /* Ändere den Wert nach Bedarf */
@@ -1244,7 +1244,9 @@ footer {
   
         overflow-y: auto; /* Scrollen bei langen Texten bleibt aktiviert */
     }
-
+.text-carousel h2 {
+    margin-top: 25px;
+}
     .text-carousel-button {
         width: 30px; /* Kleinere Pfeile auf mobilen Geräten */
         height: 30px;
