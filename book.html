@@ -42,26 +42,24 @@
     </header>
 
     <main  class="main-container ">
-
-        <section class="media-text-layout">
-            <img src="assets/00-42.jpg" alt="">
-        
-            <!-- Hauptcontainer für das Layout, das Medien und Text kombiniert -->
-            <div class="full-width-box">
-                <div class="icons-box ">
-                    <img class="icon" src="assets/hinweiss.svg" alt="calendar icon">
-                    <h2>Hinweise zur Buchung:</h2>
-                </div>
-
-                <p>- Termine können maximal <b>2 Monate</b> im Voraus gebucht werden.</p>
-                <p>- Je nach gewünschtem Termin fällt eine Reservierungspauschale an. Die genaue Höhe wird dir nach Auswahl des Datums direkt beim entsprechenden Zeitslot angezeigt.</p>
-                <p>- Diese Pauschale ist nicht erstattungsfähig und wird nicht auf den Shooting-Preis angerechnet.</p>
-                <p>- <span class="fully-booked"></span> <b>Tage</b>, die grau markiert sind, sind bereits vollständig ausgebucht und nicht mehr verfügbar.</p>
+        <div class="image-text-container-box">
+            <div class="media-text-column-left">
+                <img src="../assets/00-36.jpg" alt="">
             </div>
-        
-            <!-- Container für die beiden Spalten: rechte Spalte und linke Spalte -->
-            <div class="image-text-container-box">
-                <!-- Rechte Spalte: Kalender -->
+            <div class="media-text-column-right">
+                
+             <h2>Hinweise zur Buchung:</h2>
+  
+             <p>- Termine können maximal <b>2 Monate</b> im Voraus gebucht werden.</p>
+             <p>- Je nach gewünschtem Termin fällt eine Reservierungspauschale an. Die genaue Höhe wird dir nach Auswahl des Datums direkt beim entsprechenden Zeitslot angezeigt.</p>
+             <p>- Diese Pauschale ist nicht erstattungsfähig und wird nicht auf den Shooting-Preis angerechnet.</p>
+             <p>- <span class="fully-booked"></span> <b>Tage</b>, die grau markiert sind, sind bereits vollständig ausgebucht und nicht mehr verfügbar.</p>
+         </div>
+            </div>
+        </div>
+        <section class="media-text-layout">
+
+            <div class="full-width-box">
                 <div class="media-text-column-right">
                     <div class="calendar" id="calendar-body">
                         <div class="calendar-header">
@@ -87,16 +85,14 @@
                     </div>
                 </div>
         
-                <!-- Linke Spalte -->
-                <div class="media-text-column-left">
-                    <div class="full-width-box">
-                        <div class="alert-fullyBooked" role="alert" style="display: none;"></div>
-                        <div class="freienTermine" role="alert" style="display: block;">
-                            <!-- Hier werden verfügbare Termine eingefügt -->
-                        </div>
-                    </div>
-                </div>
             </div>
+
+            <div class="full-width-box">
+                <div class="alert-fullyBooked" role="alert" style="display: none;"></div>
+                <div class="freienTermine" role="alert" style="display: block;">
+                    <!-- Hier werden verfügbare Termine eingefügt -->
+            </div>
+     
         </section>
         
 
