@@ -75,6 +75,10 @@ h2{
     font-size: 2rem;
     font-family: "Playfair Display", serif;
 }
+h3{
+   
+    font-family: "Playfair Display", serif;
+}
 .icons-box {
     display: flex;
     flex-direction: row;
