@@ -34,18 +34,44 @@ html {
 }
 
 body {
-   font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
+    font-family: "Raleway", sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: large;
+    line-height: 1.4;
     margin: 0;
-    font-weight: 500;
-    color: var(--fs-main);
+    font-weight: 400;
+    color: var(--fs-second);
 }
 img{
     max-width: 100%;
     height:auto;
 }
 
+
+h1 {
+    font-size: 70px;
+ 
+ font-family: "Playfair Display", serif;   
+    margin: 0;
+    font-weight: 800;
+}
+
+h2 {
+   
+     font-family: "Playfair Display", serif;   
+    font-size: 40px;
+    margin: 0;
+    font-weight: 800;
+   
+}
+
+h3 {
+    
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+   
+}
 .main-container {
     width: 100%;
     max-width: 1000px; /* Mehr Platz für den Inhalt */
@@ -56,25 +82,6 @@ img{
     padding: 20px; /* Optional: Abstand innen */
 }
 
-p{
-    margin-top: 10px ; 
-}
-
-h1{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-
-    color: var(--fs-main);
-}
-
-h2{
-    color: var(--fs-second);
-    margin-top: 2px;
-    margin-bottom: 20px;
-    font-size: 2rem;
-   
-}
 
 .icons-box {
     display: flex;
@@ -123,8 +130,10 @@ h2{
 }
 
 .navbar-brand {
-    font-family: "Playfair Display", serif;    margin-left: 10px;
-    font-weight:bolder;
+    /* font-family: "Playfair Display", serif;   */
+    font-family: 'Poppins', sans-serif;
+      margin-left: 10px;
+      font-weight: 600;
     font-size: 2rem;
 }
 
@@ -138,7 +147,6 @@ h2{
 
 /* SVG Camera Icon */
 .bi-camera2 {
-    margin-top: 7px;
     width: 35px;
     height: auto; /* Behält das Seitenverhältnis */
 }
@@ -147,10 +155,9 @@ h2{
 .navbar-links a {
     color: var(--fs-main);
     display: flex;
-    margin-right: 40px;
+    margin-right: 35px;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     transition: color 0.3s ease-in-out;
 }
@@ -183,12 +190,12 @@ h2{
 
     /* Grundlegendes Styling */
     .carousel {
-    
+  
         position: relative;
         max-width: 100%;
         margin: auto;
         overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px var(--fs-third);
     }
     
     /* Slide-Container */
@@ -269,7 +276,6 @@ h2{
 
   /* Hauptcontainer für das Carousel */
   .text-carousel {
-    margin-top: 50px;
     position: relative;
     width: 100%;
     max-width: 1000px;
@@ -277,9 +283,7 @@ h2{
      box-shadow: 0 2px 2px var(--fs-main); 
     padding: 0 60px; /* Platz für die Pfeile */
 }
-.text-carousel h2{
-    margin-top: 40px;
-}
+
 /* Track für die Slides */
 .text-carousel-track {
     display: flex;
@@ -287,7 +291,9 @@ h2{
     width: 100%; /* Stellt sicher, dass der Track die gesamte Breite einnimmt */
 
 }
-
+#whatpoplesay{
+    margin-bottom: 30px;
+}
 /* Einzelne Slides */
 .text-carousel-div {
     width: 100%;
@@ -297,9 +303,10 @@ h2{
     overflow-y: auto; /* Ermöglicht Scrollen bei langen Texten */
 }
 .text-carousel-div p {
+    font-family: "Raleway", sans-serif;
 font-size: 1.1rem;
-line-height: 1.6;
-    font-style: italic;
+line-height: 1.7;
+font-style: italic;
 }
 /* Pfeile */
 .text-carousel-button {
@@ -436,16 +443,9 @@ input[type="radio"] {
 .media-text-layout {
     width: 100%;
     max-width: 1000px; /* Begrenzung der maximalen Breite */
-    margin: 20px auto; /* Zentriert den gesamten Abschnitt */
     padding: 12px; /* Abstand innerhalb des Abschnitts */
 }
 
-.media-text-layout h2 {
-
-    margin-bottom: 30px;
-    font-size: 2 rem;
-
-}
 
 .image-text-container-box {
     display: flex;
@@ -495,7 +495,7 @@ input[type="radio"] {
 .basic-price {
     background: var(--fs-second); /* Dunkler Hintergrund für Kontrast */
     color: white;
-    padding: 50px 20px 15px 30px;     border-radius: 15px;
+    padding: 25px 20px 15px 30px;    
     margin: auto;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -606,7 +606,6 @@ input[type="radio"] {
 
 .pack{
     background: var(--fs-fourth);
-    border-radius: 10px;
     padding: 20px;
     flex: 1;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -619,7 +618,7 @@ input[type="radio"] {
 
 
 .price{
- text-align: end; 
+ 
  margin-top: 30px;
     
 }
@@ -722,7 +721,7 @@ input[type="radio"] {
 .form-group input[type="tel"],
 .form-group textarea,
 .form-group select {
-    
+    font-family: "Raleway", sans-serif;
     width: 100%; /* Volle Breite */
     padding: 10px; /* Innenabstand */
     border: 0.5px solid var(--fs-third); /* Dünner Rahmen */
@@ -838,14 +837,13 @@ input:focus, textarea:focus {
 }
 
 #month-year {
-    font-family: "Playfair Display", serif;
     font-size: 1.2em;
     font-weight: bold;
 color: var(--fs-main);}
 
 .calendar-body {
-    padding: 20px;
-    font-size: 1.1rem;
+    font-family: "Raleway", sans-serif;
+        font-size: 1.1rem;
     font-weight: 400;
 }
 
@@ -853,14 +851,14 @@ color: var(--fs-main);}
 .calendar-dates {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 12px;
+    gap: 10px;
 }
 
 .calendar-weekdays div {
-    /* font-family: "Playfair Display", serif; */
+   
     color: var(--fs-second);
     text-align: center;
-    font-size: 1.2rem;
+  
     font-weight: bold;
     padding: 5px 0;
 }
@@ -1143,18 +1141,27 @@ footer {
 }
 
 
-
+@media (max-width: 1024px) {
+  
+    .navbar-links a {
+        font-size: 1.1rem;
+          margin-right: 20px;
+          font-weight: 500;
+         
+          
+      }
+}
 
 
 
 @media screen and (max-width: 768px) {
-    h1{
-        font-size: 1.8rem;
+     h1 {
+        font-size: 33px;
     }
-    h2{
-        font-size: 1.4rem;
+    h2 {
+        font-size: 27px;
+        
     }
-
     .navbar {
         position: fixed; /* Fixiert die Navbar oben */
         top: 0;
@@ -1181,7 +1188,7 @@ footer {
     }
     .navbar-links {
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: 0px;
         margin-left: 40px;
         background-color: white;
@@ -1195,24 +1202,20 @@ footer {
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
         display: none;
     }
-    .navbar-links a {
    
-  margin-left: 60px;
-    
-      
-    
-    }
     .navbar-links.show {
         display: flex; /* Menü sichtbar machen */
         opacity: 1;
         transform: translateY(0);
-        background-color: var(--fs-fourth);
+       
+        
     }
 
     .navbar-links li {
         width: 100%;
         text-align: center;
-        margin: 30px;
+        margin-bottom: 30px;
+        margin-left: 50px;
         
     }
 
@@ -1226,7 +1229,7 @@ footer {
     .three-images {
         flex-direction: column;
     }
-
+  
      /* ======== text-carousel ============ */
      .text-carousel {
         background-color: var(--fs-fourth);
@@ -1236,17 +1239,15 @@ footer {
     }
 
     .text-carousel-div {
-   
-        font-size: 1.1rem; /* Kleinere Schriftgröße für mobile Geräte */
+        margin-top : 15px;
+        font-size: 1rem; /* Kleinere Schriftgröße für mobile Geräte */
         padding: 30px; /* Weniger Padding auf kleinen Bildschirmen */
-        line-height: 1.3; /* Ändere den Wert nach Bedarf */
+        line-height: 1.2; /* Ändere den Wert nach Bedarf */
      font-weight: 500;
   
         overflow-y: auto; /* Scrollen bei langen Texten bleibt aktiviert */
     }
-.text-carousel h2 {
-    margin-top: 25px;
-}
+
     .text-carousel-button {
         width: 30px; /* Kleinere Pfeile auf mobilen Geräten */
         height: 30px;
@@ -1317,7 +1318,30 @@ footer {
     
     flex-direction: column;
 }
+
+
 }
 
-     
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 24px;
+        
+    }
+
+    h3 {
+        font-size: 18px;
+        
+    }
+
+   
+    p{
+        font-size: 17px;
+    }
+
+  
+
+}
    
